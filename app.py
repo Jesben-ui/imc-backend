@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://imc-frontend-seven.vercel.app"])
 
 # -----------------------
 # BASE EN MÉMOIRE (simple)
